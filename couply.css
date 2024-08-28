@@ -1,0 +1,238 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(212, 22%, 88%);
+  font-family: "Nunito";
+  margin: 0;
+  max-width: 550px;
+}
+header {
+  padding: 2.5em;
+}
+.header {
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-btn {
+  width: 3rem;
+  cursor: pointer;
+}
+.start {
+  display: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: white;
+  height: 100%;
+  width: 33%;
+  padding: 4.3em;
+  transition: right 0.5s ease-in-out;
+}
+.close-btn {
+  cursor: pointer;
+  display: block;
+  width: 3rem;
+  margin-left: auto;
+  margin-bottom: 5.5rem;
+}
+a .logo {
+  color: #0460bc;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+.app-img {
+  cursor: pointer;
+}
+.app-img span {
+  font-size: 2em;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  gap: 4.4em;
+  margin-top: -120px;
+  transition: right 0.5s ease-in-out;
+}
+ul li a {
+  color: black;
+  font-size: 1.4rem;
+}
+ul li a.anchar {
+  font-weight: bold;
+}
+.ul li a:hover {
+  color: white;
+  background-color: #6c7667;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+.open {
+  right: 0%;
+}
+hr {
+  font-size: 2em;
+  color: #000000;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+.shop h1 {
+  font-size: 4em;
+  align-content: center;
+  margin-left: 3em;
+}
+.para p {
+  font-size: 2em;
+  font-weight: 400;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 5em;
+}
+.content span {
+  color: #9bc588;
+}
+.button {
+  background-color: #9bc588;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 2em;
+  border-radius: 0.3em;
+}
+.section {
+  background-color: #000000;
+  top: 100px;
+  padding: 5em;
+  padding-left: 5em;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+}
+.section img {
+  font-size: 4em;
+  margin-left: 1.5em;
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+  gap: 1em;
+}
+.photos img {
+  width: 450px;
+  align-self: center;
+}
+.offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 4em;
+  gap: 0.2em;
+  margin-bottom: 2em;
+}
+.offers a {
+  color: black;
+  font-size: 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.couply {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em;
+  font-size: 2em;
+}
+.couply svg {
+  width: 30px;
+  height: 30px;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.left h1 {
+  font-size: 2em;
+  position: relative;
+  top: -40px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.left-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: space-between;
+}
+.insta {
+  position: relative;
+  top: 5px;
+}
+.right-1 {
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  margin: 5em 2em;
+  justify-content: space-between;
+}
+.footer ul li a {
+  font-size: 2em;
+  font-weight: normal;
+  margin: 1em;
+}
+.last {
+  color: #6c7667;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.last p {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 600px) {
+  .close-btn,
+  .menu-btn {
+    display: none;
+  }
+  nav {
+    position: unset;
+    height: auto;
+    background-color: none;
+    padding: 0;
+    width: auto;
+  }
+  ul {
+    flex-direction: row;
+  }
+}
